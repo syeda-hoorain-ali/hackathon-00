@@ -329,6 +329,47 @@ button {
     box-shadow: 0 0 4px #be185d;
 }
 
+/* -------------- Portfolio Section ------------ */
+
+.portfolio-section {
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.75rem 0;
+}
+
+.portfolio-form {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form .input-wrapper {
+    position: relative;
+}
+
+.input-wrapper i {
+    padding: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+    background-color: #be185d;
+}
+
+.form .input-wrapper .form-input {
+    padding-left: 3.3rem;
+}
+
 
 /* ------------------ Card ------------------ */
 

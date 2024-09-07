@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span>Hoorain ✨</span>
+                </div>
+                <div class="menu-button">
+                    <button id="menuToggle" aria-label="Open main menu">
+                        <svg id="menuIcon" class="icon" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                        <svg id="closeIcon" class="icon hidden" viewBox="0 0 24 24">
+                            <path d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="menuLinks" class="menu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/contact" class="nav-link">Contact</a>
+                    <a href="/about" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-section" style="margin-top: 70px;">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-description">Create your own portfolio with Portfolio Builder</p>
+        <form class="portfolio-form" id="portfolioForm" method="post">
+            <div class="form">
+                <div>
+                    <label for="username" class="form-label">Username</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input id="username" name="username" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="email" name="email" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="name" class="form-label">Name</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <input id="name" name="name" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="profilePic" class="form-label">Profile Picture URL</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-link"></i>
+                        <input id="profilePic" name="profilePic" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="profesion" class="form-label">Profession</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                        <input id="profession" name="profession" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="about" class="form-label">About</label>
+                    <div class="input-wrapper">
+                        <textarea id="about" name="about" rows="4" class="form-textarea"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <label for="githubUrl" class="form-label">Github URL</label>
+                    <div class="input-wrapper">
+                        <i class="fa-brands fa-github"></i>
+                        <input id="githubUrl" name="githubUrl" type="url" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="linkedinUrl" class="form-label">LinkedIn URL</label>
+                    <div class="input-wrapper">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <input id="linkedinUrl" name="linkedinUrl" type="url" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="websiteUrl" class="form-label">Website URL</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-globe"></i>
+                        <input id="websiteUrl" name="websiteUrl" type="url" class="form-input" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit-button-wrapper">
+                <button type="submit" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p class="text">&copy; Syeda Hoorain Ali, Inc. All rights reserved.</p>
+  
+        <div class="footer-icons">
+          <a href="https://github.com/syeda-hoorain-ali">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/syedahoorainali">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.npmjs.com/~syedahoorainali">
+            <i class="fa-brands fa-npm"></i>
+          </a>
+          <a href="https://syeda-hoorain-ali.vercel.app">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+  
+        </div>
+    </footer>
+
+
+    <script type="module" src="dist/index.js"></script>
+    <script type="module" src="dist/form.js"></script>
+
+</body>
+
+</html>

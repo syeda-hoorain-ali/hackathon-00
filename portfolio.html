@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Hoorain Ali</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span id="logo">✨</span>
+                </div>
+                <div class="menu-button">
+                    <button id="menuToggle" aria-label="Open main menu">
+                        <svg id="menuIcon" class="icon" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                        <svg id="closeIcon" class="icon hidden" viewBox="0 0 24 24">
+                            <path d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="menuLinks" class="menu">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="image-wrapper">
+                <img src="" alt="" class="profile-image" id="profileImg" />
+            </div>
+
+            <div class="intro">
+                <span class="greeting">Hi,</span>
+                <h1 class="main-title">I am <span class="highlight">Hoorain</span></h1>
+                <h2 class="subtitle">I'm a <span class="web-dev">Web Developer</span></h2>
+                <h3 class="future-title">Future Cloud Applied Gen-AI Engineer...</h3>
+
+                <ul class="social-icons">
+                    <li class="icons">
+                        <a href="" id="github">
+                            <i class="icon-size fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="" id="linkedin">
+                            <i class="icon-size fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="" id="website">
+                            <i class="icon-size fa-solid fa-globe"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <img src="" alt="" class="about-image" id="aboutImg" />
+        <p class="about-text" id="about"></p>
+    </section>
+
+    <!-- <section class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="card-container" id="cardContainer"></div>
+        <button class="show-more-button">
+            <a href="https://github.com/syeda-hoorain-ali/">Show more</a>
+        </button>
+    </section> -->
+
+    <section class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-grid">
+                <div>
+                    <label for="first-name" class="form-label">First name</label>
+                    <div class="input-wrapper">
+                        <input id="first-name" name="firstName" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="last-name" class="form-label">Last name</label>
+                    <div class="input-wrapper">
+                        <input id="last-name" name="lastName" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div class="email-container">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-wrapper">
+                        <input id="email" name="email" type="email" class="form-input" />
+                    </div>
+                </div>
+                <div class="message-container">
+                    <label for="message" class="form-label">Message</label>
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message" rows="4" class="form-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-button-wrapper">
+                <button type="submit" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p class="text">Created by Syeda Hoorain Ali, Inc. &copy; All rights reserved.</p>
+  
+        <div class="footer-icons" id="footer"></div>
+    </footer>
+
+
+
+    <script type="module" src="dist/index.js"></script>
+    <script type="module" src="dist/portfolio.js"></script>
+
+</body>
+
+</html>

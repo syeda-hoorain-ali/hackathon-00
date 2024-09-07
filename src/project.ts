@@ -1,9 +1,4 @@
-export interface Project {
-    github: string;
-    live: string;
-    title: string;
-    image: string;
-}
+import { Project } from "./types";
 
 export const project: Project[] = [
     {
