@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Syeda Hoorain Ali</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span>Hoorain ✨</span>
+                </div>
+                <div class="menu-button">
+                    <button id="menuToggle" aria-label="Open main menu">
+                        <svg id="menuIcon" class="icon" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                        <svg id="closeIcon" class="icon hidden" viewBox="0 0 24 24">
+                            <path d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="menuLinks" class="menu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/contact" class="nav-link">Contact</a>
+                    <a href="/about" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-section" style="margin-top: 70px;">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-grid">
+                <div>
+                    <label for="first-name" class="form-label">First name</label>
+                    <div class="input-wrapper">
+                        <input id="first-name" name="firstName" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div>
+                    <label for="last-name" class="form-label">Last name</label>
+                    <div class="input-wrapper">
+                        <input id="last-name" name="lastName" type="text" class="form-input" />
+                    </div>
+                </div>
+                <div class="email-container">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-wrapper">
+                        <input id="email" name="email" type="email" class="form-input" />
+                    </div>
+                </div>
+                <div class="message-container">
+                    <label for="message" class="form-label">Message</label>
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message" rows="4" class="form-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-button-wrapper">
+                <button type="submit" class="submit-button">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p class="text">&copy; Syeda Hoorain Ali, Inc. All rights reserved.</p>
+  
+        <div class="footer-icons">
+          <a href="https://github.com/syeda-hoorain-ali">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/syedahoorainali">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.npmjs.com/~syedahoorainali">
+            <i class="fa-brands fa-npm"></i>
+          </a>
+          <a href="https://syeda-hoorain-ali.vercel.app">
+            <i class="fa-solid fa-globe"></i>
+          </a>
+  
+        </div>
+    </footer>
+
+
+    <script type="module" src="dist/index.js"></script>
+
+</body>
+
+</html>
